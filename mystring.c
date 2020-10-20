@@ -55,7 +55,7 @@ char* mystrchr(char *s, int c) {
     i++;
   }
 
-  if (i < n) {
+  if (i <= n) {
     return s;
   } else {
     return NULL;
@@ -73,4 +73,5 @@ int mystrcmp(char *s1, char *s2) {
       return 1;
     }
   }
+  return 0;
 }
